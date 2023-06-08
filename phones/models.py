@@ -8,6 +8,6 @@ class Phone(models.Model):
     image = models.ImageField()
     release_date = models.DateField()
     lte_exists = models.CharField(max_length=50)
-    slug = models.SlugField()
+    slug = models.SlugField(max_length=255)
 
     pass
